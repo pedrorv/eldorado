@@ -1,0 +1,17 @@
+const React = require('react')
+const ReactDOM = require('react-dom')
+const { Route, Router, IndexRoute, browserHistory } = require('react-router')
+const Main = require('Main')
+const Home = require('Home')
+const Schedule = require('Schedule')
+
+
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={Main}>
+      <Route path="programacao" component={Schedule} />
+      <IndexRoute component={Home} />
+    </Route>
+  </Router>,
+  document.getElementById('app')
+)
