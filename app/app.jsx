@@ -5,6 +5,7 @@ const Main = require('Main')
 const Home = require('Home')
 const Schedule = require('Schedule')
 
+require('./styles/app.scss')
 
 ReactDOM.render(
   <Router history={browserHistory}>
