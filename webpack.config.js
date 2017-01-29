@@ -25,6 +25,10 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.ttf$/,
+        loader: 'url-loader?limit=100000'
       }
     ]
   }
