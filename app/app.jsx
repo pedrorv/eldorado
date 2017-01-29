@@ -9,7 +9,7 @@ require('./styles/app.scss')
 
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Route path="/" component={Main}>
+    <Route path="/eldorado/" component={Main}>
       <Route path="programacao" component={Schedule} />
       <IndexRoute component={Home} />
     </Route>
