@@ -26570,17 +26570,20 @@
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(1);
 
+	var _require = __webpack_require__(247),
+	    defineUrl = _require.defineUrl;
+
 	var Header = function Header(props) {
 	    return React.createElement(
-	        "header",
-	        { className: "page-header" },
-	        React.createElement("img", { src: "../images/eldorado/mancha-amarela.png", className: "top-yellow" }),
-	        React.createElement("img", { src: "../images/eldorado/logo-branco.png", className: "top-logo" }),
-	        React.createElement("div", { className: "triangular-bottom" })
+	        'header',
+	        { className: 'page-header' },
+	        React.createElement('img', { src: defineUrl("../images/eldorado/mancha-amarela.png"), className: 'top-yellow' }),
+	        React.createElement('img', { src: defineUrl("../images/eldorado/logo-branco.png"), className: 'top-logo' }),
+	        React.createElement('div', { className: 'triangular-bottom' })
 	    );
 	};
 
@@ -26590,22 +26593,25 @@
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(1);
 
+	var _require = __webpack_require__(247),
+	    defineUrl = _require.defineUrl;
+
 	var Footer = function Footer(props) {
 	    return React.createElement(
-	        "footer",
-	        { className: "page-footer" },
+	        'footer',
+	        { className: 'page-footer' },
 	        React.createElement(
-	            "div",
-	            { className: "footer-content" },
-	            React.createElement("img", { src: "../images/eldorado/logo-preto.png", alt: "Logo do El Dorado" }),
+	            'div',
+	            { className: 'footer-content' },
+	            React.createElement('img', { src: defineUrl('/images/eldorado/logo-preto.png'), alt: 'Logo do El Dorado' }),
 	            React.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "2017 - Todos os direitos reservados"
+	                '2017 - Todos os direitos reservados'
 	            )
 	        )
 	    );
@@ -27034,6 +27040,24 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 247 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function defineUrl(url) {
+	  if (window.location.hostname.indexOf('github') !== -1) {
+	    return 'public/' + url;
+	  }
+
+	  return '../' + url;
+	}
+
+	module.exports = {
+	  defineUrl: defineUrl
+	};
 
 /***/ }
 /******/ ]);
