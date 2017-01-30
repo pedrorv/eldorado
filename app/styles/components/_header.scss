@@ -3,33 +3,39 @@ header.page-header {
   height: 60px;
   width: 100%;
   overflow-y: visible;
-  display: flex;
 
   &, img {
     z-index: 10;
   }
 
-  div.triangular-bottom {
-    width: 0;
-    height: 0;
+  div.triangle-container {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
     margin-top: 60px;
-    border-style: solid;
-    border-width: 66px 50vw 0 46vw;
-    border-color: $eldorado-blue transparent transparent transparent;
+
+
+    div.triangular-bottom {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 66px 50vmin 0 50vmin;
+      border-color: $eldorado-blue transparent transparent transparent;
+    }
   }
 
   img.top-yellow {
-    width: 120px;
+    width: 22vmin;
     position: absolute;
     top: -20px;
     left: 0;
   }
 
   img.top-logo {
-    width: 150px;
+    width: 40vmin;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -20vmin;
   }
 }

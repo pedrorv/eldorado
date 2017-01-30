@@ -6,7 +6,9 @@ const Header = (props) => {
         <header className="page-header">
             <img src={defineUrl("images/eldorado/mancha-amarela.png")} className="top-yellow" />
             <img src={defineUrl("images/eldorado/logo-branco.png")} className="top-logo" />
-            <div className="triangular-bottom"></div>
+            <div className="triangle-container">
+                <div className="triangular-bottom"></div>
+            </div>
         </header>
     )
 }

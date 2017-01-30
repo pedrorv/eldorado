@@ -1,13 +1,13 @@
 main.page-banner {
-  height: calc(100vh - 60px);
+  height: calc(92vmax - 60px);
   overflow-x: hidden;
   position: relative;
 
   img.banner-image {
-    height: calc(100vh - 60px);
+    height: calc(92vmax - 60px);
     filter: grayscale(1);
     display: block;
-    margin-left: -180px;
+    margin-left: -40vmin;
   }
 
   img.schedule-highlight {
@@ -15,36 +15,86 @@ main.page-banner {
     top: 0;
     left: 0;
     background-color: $eldorado-blue;
-    height: calc(100vh - 60px);
-    padding: 100px 5px;
+    height: calc(92vmax - 60px);
+    padding: 20vmax 3px;
     box-sizing: border-box;
     z-index: 2;
   }
 
+  h2, p {
+    margin: 0;
+    margin-left: 25%;
+    box-sizing: border-box;
+  }
+
   h2.banner-title {
-    position: absolute;
-    bottom: 70px;
-    font-size: 35px;
-    width: 30px;
+    font-size: 1.6em;
     color: white;
-    left: 30%;
     text-transform: uppercase;
   }
 
   p.banner-subtitle {
-    position: absolute;
-    bottom: 10px;
-    font-size: 25px;
+    font-size: 1em;
     color: white;
-    left: 30%;
   }
 
   div.banner-description {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    height: 30%;
+    height: 35%;
     position: absolute;
     bottom: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+section.tickets {
+  background-color: $eldorado-blue;
+  padding-top: 20px;
+  height: 150px;
+  text-align: center;
+  position: relative; 
+  box-sizing: border-box;
+  overflow-y: visible;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  div.flex-image-wrapper {
+    width: 100%;
+
+    img.buy-tickets {
+      width: 85vmin;
+      margin: 0 auto;
+    }
+  }
+
+  h2.tickets-subtitle {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    z-index: 50;
+  }
+
+  div.triangle-container {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    margin-top: 150px;
+
+    div.triangular-bottom {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 50vmin 0 50vmin;
+      border-color: $eldorado-blue transparent transparent transparent;
+    }
   }
 }

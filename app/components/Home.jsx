@@ -1,5 +1,6 @@
 const React = require('react')
 const { defineUrl } = require('../utils/utilities')
+const { Link } = require('react-router')
 
 const Home = (props) => {
     return (
@@ -12,10 +13,21 @@ const Home = (props) => {
                      alt="Programação" 
                      className="schedule-highlight" />
                 <div className="banner-description">
-                    <h2 className="banner-title">Cervejaria 2Cabeças</h2>
-                    <p className="banner-subtitle">Sabores exclusivos<br /> da fabricante carioca.</p>
+                    <h2 className="banner-title">Cervejaria<br/>2Cabeças</h2>
+                    <p className="banner-subtitle">Sabores exclusivos<br/>da fabricante carioca.</p>
                 </div>
             </main>
+            <section className="tickets">
+                <div className="flex-image-wrapper">
+                    <img src={defineUrl('images/eldorado/garanta-seu-ingresso-branco.png')} 
+                         alt="Garanta seu ingresso"
+                         className="buy-tickets" />
+                </div>
+                <h2 className="tickets-subtitle">Conheça nossos pacotes</h2>
+                <div className="triangle-container">
+                    <div className="triangular-bottom"></div>
+                </div>
+            </section>
         </div>
     )
 }
