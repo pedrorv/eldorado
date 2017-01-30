@@ -23,10 +23,33 @@ const Home = (props) => {
                          alt="Garanta seu ingresso"
                          className="buy-tickets" />
                 </div>
-                <h2 className="tickets-subtitle">Conheça nossos pacotes</h2>
-                <div className="triangle-container">
-                    <div className="triangular-bottom"></div>
+                <div className="flex-div">
+                    <h2 className="tickets-subtitle">Conheça nossos pacotes</h2>
                 </div>
+            </section>
+            <div className="triangle-container">
+                <div className="triangular-bottom"></div>
+            </div>
+            <section className="about">
+                <div className="flex-image-wrapper">
+                    <img src={defineUrl('images/eldorado/conheca-el-dorado.png')} 
+                         alt="Conheça El Dorado"
+                         className="about-image" />
+                    <p>O evento cervejeiro<br/>
+                       que une diversão<br/>
+                       com conhecimento</p>
+                </div>
+                <div className="flex-image-wrapper">
+                    <img src={defineUrl('images/eldorado/caveira-ed.png')} 
+                         alt="Caveira Ed"
+                         className="mascot-image" />
+                </div>
+                <p className="event-text">"Lorem ipsum dolor sit amet, consectetur
+adipiscing elit, sed do eiusmod tempor in-
+cididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi
+ut...</p>
             </section>
         </div>
     )

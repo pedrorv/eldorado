@@ -1,10 +1,22 @@
+div.flex-image-wrapper {
+  width: 100%;
+  margin-top: 10px;
+}
+
+div.page-home {
+  display: flex;
+  flex-direction: column;
+}
+
 main.page-banner {
-  height: calc(92vmax - 60px);
+  height: calc(#{$eldorado-banner-base-size} - 60px);
   overflow-x: hidden;
   position: relative;
+  display: flex;
+  overflow-y: hidden;
 
   img.banner-image {
-    height: calc(92vmax - 60px);
+    height: calc(#{$eldorado-banner-base-size} - 60px);
     filter: grayscale(1);
     display: block;
     margin-left: -40vmin;
@@ -15,7 +27,7 @@ main.page-banner {
     top: 0;
     left: 0;
     background-color: $eldorado-blue;
-    height: calc(92vmax - 60px);
+    height: calc(#{$eldorado-banner-base-size} - 60px);
     padding: 20vmax 3px;
     box-sizing: border-box;
     z-index: 2;
@@ -40,7 +52,7 @@ main.page-banner {
 
   div.banner-description {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(transparent, rgba(0,0,0,0.7), rgba(0,0,0,1));
     height: 35%;
     position: absolute;
     bottom: 0;
@@ -53,23 +65,16 @@ main.page-banner {
 
 section.tickets {
   background-color: $eldorado-blue;
-  padding-top: 20px;
-  height: 150px;
-  text-align: center;
-  position: relative; 
   box-sizing: border-box;
-  overflow-y: visible;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
 
-  div.flex-image-wrapper {
-    width: 100%;
-
-    img.buy-tickets {
-      width: 85vmin;
-      margin: 0 auto;
-    }
+  img.buy-tickets {
+    width: 85vmin;
+    margin: 0 auto;
+    display: block;
   }
 
   h2.tickets-subtitle {
@@ -78,23 +83,60 @@ section.tickets {
     color: white;
     margin: 0;
     margin-top: 10px;
-    z-index: 50;
+  }
+}
+
+section.about {
+  position: relative; 
+  box-sizing: border-box;
+  overflow-y: visible;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 20px;
+
+  div.flex-image-wrapper {
+    width: 30%;
+    margin: 0;
+
+    &:first-child {
+      width: 70%;
+    }
+
+    p {
+      font-size: 1.1em;
+      padding-left: 10px;
+    }
   }
 
-  div.triangle-container {
-    display: block;
-    width: 100%;
-    overflow-x: hidden;
-    position: absolute;
-    top: 0;
-    margin-top: 150px;
+  p.event-text {
+    padding: 10px;
+    margin: 0;
+  }
 
-    div.triangular-bottom {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 50px 50vmin 0 50vmin;
-      border-color: $eldorado-blue transparent transparent transparent;
-    }
+  img.about-image {
+    width: 55vmin;
+  }
+
+  img.mascot-image {
+    width: 30vmin;
+    float: right;
+    margin-top: -90px;
+  }
+}
+
+div.triangle-container {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  flex: 1 0 auto;
+
+  div.triangular-bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15vmin 50vmin 0 50vmin;
+    border-color: $eldorado-blue transparent transparent transparent;
   }
 }
