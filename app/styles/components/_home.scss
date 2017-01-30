@@ -1,0 +1,50 @@
+main.page-banner {
+  height: calc(100vh - 60px);
+  overflow-x: hidden;
+  position: relative;
+
+  img.banner-image {
+    height: calc(100vh - 60px);
+    filter: grayscale(1);
+    display: block;
+    margin-left: -180px;
+  }
+
+  img.schedule-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $eldorado-blue;
+    height: calc(100vh - 60px);
+    padding: 100px 5px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  h2.banner-title {
+    position: absolute;
+    bottom: 70px;
+    font-size: 35px;
+    width: 30px;
+    color: white;
+    left: 30%;
+    text-transform: uppercase;
+  }
+
+  p.banner-subtitle {
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    color: white;
+    left: 30%;
+  }
+
+  div.banner-description {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+}

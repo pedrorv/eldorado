@@ -7,7 +7,6 @@ const Main = (props) => {
     return (
         <div>
             <Header/>
-            <p>Main Component</p>
             {props.children}
             <Footer/>
         </div>
