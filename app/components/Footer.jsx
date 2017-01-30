@@ -5,7 +5,7 @@ const Footer = (props) => {
     return (
         <footer className="page-footer">
             <div className="footer-content">
-                <img src={defineUrl('/images/eldorado/logo-preto.png')} alt="Logo do El Dorado" />
+                <img src={defineUrl('images/eldorado/logo-preto.png')} alt="Logo do El Dorado" />
                 <p>2017 - Todos os direitos reservados</p>
             </div>
         </footer>

@@ -26581,8 +26581,8 @@
 	    return React.createElement(
 	        'header',
 	        { className: 'page-header' },
-	        React.createElement('img', { src: defineUrl("../images/eldorado/mancha-amarela.png"), className: 'top-yellow' }),
-	        React.createElement('img', { src: defineUrl("../images/eldorado/logo-branco.png"), className: 'top-logo' }),
+	        React.createElement('img', { src: defineUrl("images/eldorado/mancha-amarela.png"), className: 'top-yellow' }),
+	        React.createElement('img', { src: defineUrl("images/eldorado/logo-branco.png"), className: 'top-logo' }),
 	        React.createElement('div', { className: 'triangular-bottom' })
 	    );
 	};
@@ -26607,7 +26607,7 @@
 	        React.createElement(
 	            'div',
 	            { className: 'footer-content' },
-	            React.createElement('img', { src: defineUrl('/images/eldorado/logo-preto.png'), alt: 'Logo do El Dorado' }),
+	            React.createElement('img', { src: defineUrl('images/eldorado/logo-preto.png'), alt: 'Logo do El Dorado' }),
 	            React.createElement(
 	                'p',
 	                null,
