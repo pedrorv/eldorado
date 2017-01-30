@@ -2,7 +2,15 @@
 @import 'base/variables';
 @import 'base/fonts';
 
-html {
-    color: $eldorado-blue;
-    font-family: hkgrotesk-regular;
+div#app, div[data-reactroot] {
+    width: 100%;
 }
+
+div[data-reactroot] {
+    display: flex;
+    height: 100vh;
+    flex-flow: column wrap;
+}
+
+@import 'components/header';
+@import 'components/footer';

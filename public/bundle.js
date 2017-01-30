@@ -26570,19 +26570,17 @@
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(1);
 
 	var Header = function Header(props) {
 	    return React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	            'p',
-	            null,
-	            'Header Component'
-	        )
+	        "header",
+	        { className: "page-header" },
+	        React.createElement("img", { src: "../images/eldorado/mancha-amarela.png", className: "top-yellow" }),
+	        React.createElement("img", { src: "../images/eldorado/logo-branco.png", className: "top-logo" }),
+	        React.createElement("div", { className: "triangular-bottom" })
 	    );
 	};
 
@@ -26592,18 +26590,23 @@
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(1);
 
 	var Footer = function Footer(props) {
 	    return React.createElement(
-	        'div',
-	        null,
+	        "footer",
+	        { className: "page-footer" },
 	        React.createElement(
-	            'p',
-	            null,
-	            'Footer Component'
+	            "div",
+	            { className: "footer-content" },
+	            React.createElement("img", { src: "../images/eldorado/logo-preto.png", alt: "Logo do El Dorado" }),
+	            React.createElement(
+	                "p",
+	                null,
+	                "2017 - Todos os direitos reservados"
+	            )
 	        )
 	    );
 	};
@@ -26689,7 +26692,7 @@
 
 
 	// module
-	exports.push([module.id, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n/* Document\n   ========================================================================== */\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\nbutton, hr, input {\n  overflow: visible; }\n\naudio, canvas, progress, video {\n  display: inline-block; }\n\nprogress, sub, sup {\n  vertical-align: baseline; }\n\nhtml {\n  font-family: sans-serif;\n  line-height: 1.15;\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%; }\n\nbody {\n  margin: 0; }\n\nmenu, article, aside, details, footer, header, nav, section {\n  display: block; }\n\nh1 {\n  font-size: 2em;\n  margin: .67em 0; }\n\nfigcaption, figure, main {\n  display: block; }\n\nfigure {\n  margin: 1em 40px; }\n\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,monospace;\n  font-size: 1em; }\n\na {\n  background-color: transparent;\n  -webkit-text-decoration-skip: objects; }\n\na:active, a:hover {\n  outline-width: 0; }\n\nabbr[title] {\n  border-bottom: none;\n  text-decoration: underline;\n  text-decoration: underline dotted; }\n\nb, strong {\n  font-weight: bolder; }\n\ndfn {\n  font-style: italic; }\n\nmark {\n  background-color: #ff0;\n  color: #000; }\n\nsmall {\n  font-size: 80%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative; }\n\nsub {\n  bottom: -.25em; }\n\nsup {\n  top: -.5em; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\nimg {\n  border-style: none; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nbutton, input, optgroup, select, textarea {\n  font-family: sans-serif;\n  font-size: 100%;\n  line-height: 1.15;\n  margin: 0; }\n\nbutton, select {\n  text-transform: none; }\n\n[type=submit], [type=reset], button, html [type=button] {\n  -webkit-appearance: button; }\n\n[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {\n  outline: ButtonText dotted 1px; }\n\nfieldset {\n  border: 1px solid silver;\n  margin: 0 2px;\n  padding: .35em .625em .75em; }\n\nlegend {\n  box-sizing: border-box;\n  color: inherit;\n  display: table;\n  max-width: 100%;\n  padding: 0;\n  white-space: normal; }\n\ntextarea {\n  overflow: auto; }\n\n[type=checkbox], [type=radio] {\n  box-sizing: border-box;\n  padding: 0; }\n\n[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {\n  height: auto; }\n\n[type=search] {\n  -webkit-appearance: textfield;\n  outline-offset: -2px; }\n\n[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  font: inherit; }\n\nsummary {\n  display: list-item; }\n\n[hidden], template {\n  display: none; }\n\n@font-face {\n  font-family: hkgrotesk-regular;\n  src: url(" + __webpack_require__(241) + "); }\n\n@font-face {\n  font-family: hkgrotesk-light;\n  src: url(" + __webpack_require__(242) + "); }\n\n@font-face {\n  font-family: hkgrotesk-medium;\n  src: url(" + __webpack_require__(243) + "); }\n\n@font-face {\n  font-family: hkgrotesk-semibold;\n  src: url(" + __webpack_require__(244) + "); }\n\n@font-face {\n  font-family: hkgrotesk-bold;\n  src: url(" + __webpack_require__(245) + "); }\n\nhtml {\n  color: #09A8A3;\n  font-family: hkgrotesk-regular; }\n", ""]);
+	exports.push([module.id, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n/* Document\n   ========================================================================== */\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\nbutton, hr, input {\n  overflow: visible; }\n\naudio, canvas, progress, video {\n  display: inline-block; }\n\nprogress, sub, sup {\n  vertical-align: baseline; }\n\nhtml {\n  font-family: sans-serif;\n  line-height: 1.15;\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%; }\n\nbody {\n  margin: 0; }\n\nmenu, article, aside, details, footer, header, nav, section {\n  display: block; }\n\nh1 {\n  font-size: 2em;\n  margin: .67em 0; }\n\nfigcaption, figure, main {\n  display: block; }\n\nfigure {\n  margin: 1em 40px; }\n\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,monospace;\n  font-size: 1em; }\n\na {\n  background-color: transparent;\n  -webkit-text-decoration-skip: objects; }\n\na:active, a:hover {\n  outline-width: 0; }\n\nabbr[title] {\n  border-bottom: none;\n  text-decoration: underline;\n  text-decoration: underline dotted; }\n\nb, strong {\n  font-weight: bolder; }\n\ndfn {\n  font-style: italic; }\n\nmark {\n  background-color: #ff0;\n  color: #000; }\n\nsmall {\n  font-size: 80%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative; }\n\nsub {\n  bottom: -.25em; }\n\nsup {\n  top: -.5em; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\nimg {\n  border-style: none; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nbutton, input, optgroup, select, textarea {\n  font-family: sans-serif;\n  font-size: 100%;\n  line-height: 1.15;\n  margin: 0; }\n\nbutton, select {\n  text-transform: none; }\n\n[type=submit], [type=reset], button, html [type=button] {\n  -webkit-appearance: button; }\n\n[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {\n  outline: ButtonText dotted 1px; }\n\nfieldset {\n  border: 1px solid silver;\n  margin: 0 2px;\n  padding: .35em .625em .75em; }\n\nlegend {\n  box-sizing: border-box;\n  color: inherit;\n  display: table;\n  max-width: 100%;\n  padding: 0;\n  white-space: normal; }\n\ntextarea {\n  overflow: auto; }\n\n[type=checkbox], [type=radio] {\n  box-sizing: border-box;\n  padding: 0; }\n\n[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {\n  height: auto; }\n\n[type=search] {\n  -webkit-appearance: textfield;\n  outline-offset: -2px; }\n\n[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  font: inherit; }\n\nsummary {\n  display: list-item; }\n\n[hidden], template {\n  display: none; }\n\n@font-face {\n  font-family: hkgrotesk-regular;\n  src: url(" + __webpack_require__(241) + "); }\n\n@font-face {\n  font-family: hkgrotesk-light;\n  src: url(" + __webpack_require__(242) + "); }\n\n@font-face {\n  font-family: hkgrotesk-medium;\n  src: url(" + __webpack_require__(243) + "); }\n\n@font-face {\n  font-family: hkgrotesk-semibold;\n  src: url(" + __webpack_require__(244) + "); }\n\n@font-face {\n  font-family: hkgrotesk-bold;\n  src: url(" + __webpack_require__(245) + "); }\n\ndiv#app, div[data-reactroot] {\n  width: 100%; }\n\ndiv[data-reactroot] {\n  display: flex;\n  height: 100vh;\n  flex-flow: column wrap; }\n\nheader.page-header {\n  background-color: #09A8A3;\n  height: 60px;\n  width: 100%;\n  overflow-y: visible;\n  display: flex; }\n  header.page-header, header.page-header img {\n    z-index: 10; }\n  header.page-header div.triangular-bottom {\n    width: 0;\n    height: 0;\n    margin-top: 60px;\n    border-style: solid;\n    border-width: 40px 50vw 0 50vw;\n    border-color: #09A8A3 transparent transparent transparent; }\n  header.page-header img.top-yellow {\n    width: 70px;\n    position: absolute;\n    top: -5px;\n    left: 0; }\n  header.page-header img.top-logo {\n    width: 120px;\n    position: absolute;\n    top: 0;\n    left: 50%;\n    margin-left: -50px; }\n\nfooter.page-footer {\n  display: flex;\n  width: 100%;\n  height: 100px;\n  color: #000;\n  justify-content: center; }\n  footer.page-footer div.footer-content {\n    display: flex;\n    width: 90%;\n    justify-content: space-between; }\n    footer.page-footer div.footer-content img {\n      height: 50px; }\n    footer.page-footer div.footer-content p {\n      font-size: 15px; }\n    footer.page-footer div.footer-content img, footer.page-footer div.footer-content p {\n      align-self: center; }\n", ""]);
 
 	// exports
 
