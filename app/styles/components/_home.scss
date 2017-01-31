@@ -139,4 +139,69 @@ div.triangle-container {
     border-width: 15vmin 50vmin 0 50vmin;
     border-color: $eldorado-blue transparent transparent transparent;
   }
+
+  div.triangular-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30vmin 100vmin;
+    border-color: transparent transparent $eldorado-blue transparent;
+  }
+}
+
+section.teasers {
+  background-color: $eldorado-blue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  padding-bottom: 20px;
+  color: white;
+
+  div.flex-image-wrapper:first-child {
+    position: relative;
+  }
+  
+  div.flexbox {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    position: relative;
+
+  }
+
+  img.teasers {
+    width: 65vmin;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+
+  img.teaser-image {
+    width: 90vmin;
+    display: block;
+    margin: 0 auto;
+  }
+
+  div.flex-image-wrapper {
+    margin: 15px 0;
+
+    div.image-description {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 90vmin;
+      margin-left: -45vmin;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7), rgba(0,0,0,1));
+      height: 30%;
+      padding: 10px;
+      box-sizing: border-box;
+
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
 }

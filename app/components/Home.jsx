@@ -51,6 +51,43 @@ aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi
 ut...</p>
             </section>
+            <div className="triangle-container">
+                <div className="triangular-right"></div>
+            </div>
+            <section className="teasers">
+                <div className="flex-image-wrapper">
+                    <img src={defineUrl('images/eldorado/teasers.png')} 
+                         alt="Teasers"
+                         className="teasers" />
+                </div>
+                <div className="flexbox">
+                    <div className="flex-image-wrapper">
+                        <img src={defineUrl('images/outros/chopp-e-cerveja-6.jpg')} 
+                                alt="Teasers"
+                                className="teaser-image" />
+                        <div className="image-description">
+                            <p>
+                                O Brasil e a Cerveja: Mercado atual - El Dorado Evento Cervejeiro
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flexbox">
+                    <div className="flex-image-wrapper">
+                        <img src={defineUrl('images/outros/cerveja_hocus_pocus.jpg')} 
+                            alt="Teasers"
+                            className="teaser-image" />
+                        <div className="image-description">
+                            <p>
+                                Cerveja é experiência - El Dorado Evento Cervejeiro
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flexbox">
+                    <h3>veja mais em nosso canal no YouTube</h3>
+                </div>
+            </section>
         </div>
     )
 }
