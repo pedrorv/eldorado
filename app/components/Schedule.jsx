@@ -53,7 +53,7 @@ const Schedule = (props) => {
             <div className="flexbox beer">
                 <div className="flexbox beer-info">
                     <div className="flex-image-wrapper">
-                        <img src={defineUrl('images/outros/2cabecas_logo.png')} 
+                        <img src={defineUrl('images/outros/bohemia_logo.png')} 
                              alt="2Cabeças Logo"
                              className="beer-logo" />
                     </div>
@@ -93,7 +93,7 @@ const Schedule = (props) => {
                 </div>
                 <div className="flexbox beer-image">
                     <div className="flex-image-wrapper">
-                        <img src={defineUrl('images/outros/maracujipa.png')} 
+                        <img src={defineUrl('images/outros/hocus-pocus.png')} 
                              alt="2Cabeças Logo"
                              className="beer-bottle" />
                     </div>

@@ -26912,7 +26912,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/2cabecas_logo.png'),
+	                    React.createElement('img', { src: defineUrl('images/outros/bohemia_logo.png'),
 	                        alt: '2Cabe\xE7as Logo',
 	                        className: 'beer-logo' })
 	                ),
@@ -26982,7 +26982,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/maracujipa.png'),
+	                    React.createElement('img', { src: defineUrl('images/outros/hocus-pocus.png'),
 	                        alt: '2Cabe\xE7as Logo',
 	                        className: 'beer-bottle' })
 	                )
