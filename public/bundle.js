@@ -26820,6 +26820,9 @@
 	var _require = __webpack_require__(235),
 	    defineUrl = _require.defineUrl;
 
+	var BreweryFlag = __webpack_require__(248);
+	var BrewerySection = __webpack_require__(249);
+
 	var Schedule = function Schedule(props) {
 	    return React.createElement(
 	        'div',
@@ -26856,147 +26859,21 @@
 	                    className: 'image-breweries' })
 	            )
 	        ),
-	        React.createElement(
-	            'div',
-	            { className: 'flexbox beer' },
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox beer-info' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/2cabecas_logo.png'),
-	                        alt: '2Cabe\xE7as Logo',
-	                        className: 'beer-logo' })
-	                ),
-	                React.createElement(
-	                    'h2',
-	                    { className: 'brewery-name' },
-	                    'Cervejaria',
-	                    React.createElement('br', null),
-	                    '2Cabe\xE7as'
-	                ),
-	                React.createElement(
-	                    'p',
-	                    { className: 'brewery-description' },
-	                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox beer-image' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/maracujipa.png'),
-	                        alt: '2Cabe\xE7as garrafa',
-	                        className: 'beer-bottle' })
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox' },
-	                React.createElement(
-	                    'a',
-	                    { href: '#', className: 'beer-link' },
-	                    'saiba mais no site da 2Cabe\xE7as'
-	                )
-	            )
-	        ),
-	        React.createElement(
-	            'div',
-	            { className: 'flexbox beer' },
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox beer-info' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/bohemia_logo.png'),
-	                        alt: 'Bohemia Logo',
-	                        className: 'beer-logo' })
-	                ),
-	                React.createElement(
-	                    'h2',
-	                    { className: 'brewery-name' },
-	                    'Cervejaria',
-	                    React.createElement('br', null),
-	                    'Bohemia'
-	                ),
-	                React.createElement(
-	                    'p',
-	                    { className: 'brewery-description' },
-	                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox beer-image' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/bohemia_ipa.png'),
-	                        alt: 'Bohemia garrafa',
-	                        className: 'beer-bottle' })
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox' },
-	                React.createElement(
-	                    'a',
-	                    { href: '#', className: 'beer-link' },
-	                    'saiba mais no site da Bohemia'
-	                )
-	            )
-	        ),
-	        React.createElement(
-	            'div',
-	            { className: 'flexbox beer' },
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox beer-info' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/hocus_pocus_logo.png'),
-	                        alt: 'Hocus Pocus Logo',
-	                        className: 'beer-logo' })
-	                ),
-	                React.createElement(
-	                    'h2',
-	                    { className: 'brewery-name' },
-	                    'Cervejaria',
-	                    React.createElement('br', null),
-	                    'Hocus Pocus'
-	                ),
-	                React.createElement(
-	                    'p',
-	                    { className: 'brewery-description' },
-	                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna'
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox beer-image' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/hocus-pocus.png'),
-	                        alt: 'Hocus Pocus garrafa',
-	                        className: 'beer-bottle' })
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox' },
-	                React.createElement(
-	                    'a',
-	                    { href: '#', className: 'beer-link' },
-	                    'saiba mais no site da Hocus Pocus'
-	                )
-	            )
-	        ),
+	        React.createElement(BrewerySection, { breweryImgSrc: 'images/outros/2cabecas_logo.png',
+	            breweryName: '2Cabe\xE7as',
+	            breweryDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+	            breweryLink: '#',
+	            beerImgSrc: 'images/outros/maracujipa.png' }),
+	        React.createElement(BrewerySection, { breweryImgSrc: 'images/outros/bohemia_logo.png',
+	            breweryName: 'Bohemia',
+	            breweryDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+	            breweryLink: '#',
+	            beerImgSrc: 'images/outros/bohemia_ipa.png' }),
+	        React.createElement(BrewerySection, { breweryImgSrc: 'images/outros/hocus_pocus_logo.png',
+	            breweryName: 'Hocus Pocus',
+	            breweryDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+	            breweryLink: '#',
+	            beerImgSrc: 'images/outros/hocus-pocus.png' }),
 	        React.createElement(
 	            'div',
 	            { className: 'flexbox beer-others' },
@@ -27005,75 +26882,12 @@
 	                null,
 	                'E MAIS'
 	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox brewery-flag' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/cacildis.jpg'),
-	                        alt: 'Cacildis Logo',
-	                        className: 'beer-bottle' }),
-	                    React.createElement(
-	                        'h3',
-	                        null,
-	                        'Cervejaria',
-	                        React.createElement('br', null),
-	                        'Cacildis'
-	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'triangle-container adjust-top' },
-	                    React.createElement('div', { className: 'triangular-right' })
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox brewery-flag' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/colorado_logo.png'),
-	                        alt: 'Colorado Logo',
-	                        className: 'beer-bottle' }),
-	                    React.createElement(
-	                        'h3',
-	                        null,
-	                        'Cervejaria',
-	                        React.createElement('br', null),
-	                        'Colorado'
-	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'triangle-container adjust-top' },
-	                    React.createElement('div', { className: 'triangular-right' })
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'flexbox brewery-flag' },
-	                React.createElement(
-	                    'div',
-	                    { className: 'flex-image-wrapper' },
-	                    React.createElement('img', { src: defineUrl('images/outros/brewdog_logo.png'),
-	                        alt: 'Brew Dog Logo',
-	                        className: 'beer-bottle' }),
-	                    React.createElement(
-	                        'h3',
-	                        null,
-	                        'Cervejaria',
-	                        React.createElement('br', null),
-	                        'Brew Dog'
-	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'triangle-container adjust-top' },
-	                    React.createElement('div', { className: 'triangular-right' })
-	                )
-	            )
+	            React.createElement(BreweryFlag, { breweryImageSrc: 'images/outros/cacildis.jpg',
+	                breweryName: 'Cacildis' }),
+	            React.createElement(BreweryFlag, { breweryImageSrc: 'images/outros/colorado_logo.png',
+	                breweryName: 'Colorado' }),
+	            React.createElement(BreweryFlag, { breweryImageSrc: 'images/outros/brewdog_logo.png',
+	                breweryName: 'Brew Dog' })
 	        )
 	    );
 	};
@@ -27457,6 +27271,120 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var _require = __webpack_require__(235),
+	    defineUrl = _require.defineUrl;
+
+	var BreweryFlag = function BreweryFlag(props) {
+	    var breweryImageSrc = props.breweryImageSrc,
+	        breweryName = props.breweryName;
+
+
+	    return React.createElement(
+	        'div',
+	        { className: 'flexbox brewery-flag' },
+	        React.createElement(
+	            'div',
+	            { className: 'flex-image-wrapper' },
+	            React.createElement('img', { src: defineUrl(breweryImageSrc),
+	                alt: breweryName + " Logo",
+	                className: 'beer-bottle' }),
+	            React.createElement(
+	                'h3',
+	                null,
+	                'Cervejaria',
+	                React.createElement('br', null),
+	                breweryName
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'triangle-container adjust-top' },
+	            React.createElement('div', { className: 'triangular-right' })
+	        )
+	    );
+	};
+
+	module.exports = BreweryFlag;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var _require = __webpack_require__(235),
+	    defineUrl = _require.defineUrl;
+
+	var BrewerySection = function BrewerySection(props) {
+	    var breweryImgSrc = props.breweryImgSrc,
+	        breweryName = props.breweryName,
+	        breweryDescription = props.breweryDescription,
+	        breweryLink = props.breweryLink,
+	        beerImgSrc = props.beerImgSrc;
+
+
+	    return React.createElement(
+	        'div',
+	        { className: 'flexbox beer' },
+	        React.createElement(
+	            'div',
+	            { className: 'flexbox beer-info' },
+	            React.createElement(
+	                'div',
+	                { className: 'flex-image-wrapper' },
+	                React.createElement('img', { src: defineUrl(breweryImgSrc),
+	                    alt: breweryName + " Logo",
+	                    className: 'beer-logo' })
+	            ),
+	            React.createElement(
+	                'h2',
+	                { className: 'brewery-name' },
+	                'Cervejaria',
+	                React.createElement('br', null),
+	                breweryName
+	            ),
+	            React.createElement(
+	                'p',
+	                { className: 'brewery-description' },
+	                breweryDescription
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'flexbox beer-image' },
+	            React.createElement(
+	                'div',
+	                { className: 'flex-image-wrapper' },
+	                React.createElement('img', { src: defineUrl(beerImgSrc),
+	                    alt: breweryName + " garrafa",
+	                    className: 'beer-bottle' })
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'flexbox' },
+	            React.createElement(
+	                'a',
+	                { href: breweryLink, className: 'beer-link' },
+	                'saiba mais no site da ',
+	                breweryName
+	            )
+	        )
+	    );
+	};
+
+	module.exports = BrewerySection;
 
 /***/ }
 /******/ ]);
