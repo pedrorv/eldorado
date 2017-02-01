@@ -17,7 +17,7 @@ div.page-home {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 30vw 50vw 0 50vw;
+      border-width: 15vw 50vw 0 50vw;
       border-color: $eldorado-blue transparent transparent transparent;
     }
 
@@ -93,6 +93,7 @@ section.tickets {
   flex-direction: column;
   align-items: center;
   flex: 1 0 auto;
+  z-index: 30;
 
   img.buy-tickets {
     width: 85vmin;
@@ -102,10 +103,9 @@ section.tickets {
 
   h2.tickets-subtitle {
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.1em;
     color: white;
-    margin: 0;
-    margin-top: 10px;
+    margin-bottom: -10px;
   }
 }
 
@@ -118,13 +118,14 @@ section.about {
   flex-direction: row;
   padding: 10px;
   margin-top: 20px;
+  justify-content: center;
 
   div.flex-image-wrapper {
     width: 30%;
     margin: 0;
 
     &:first-child {
-      width: 70%;
+      width: 65%;
     }
 
     p {
@@ -134,18 +135,18 @@ section.about {
   }
 
   p.event-text {
-    padding: 10px;
+    padding: 10px 20px;
     margin: 0;
   }
 
   img.about-image {
-    width: 55vmin;
+    width: 55vw;
   }
 
   img.mascot-image {
-    width: 30vmin;
-    float: right;
+    width: 120px;
     margin-top: -90px;
+    float: right;
   }
 }
 

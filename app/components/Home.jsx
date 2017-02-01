@@ -23,9 +23,7 @@ const Home = (props) => {
                          alt="Garanta seu ingresso"
                          className="buy-tickets" />
                 </div>
-                <div className="flex-div">
-                    <h2 className="tickets-subtitle">Conheça nossos pacotes</h2>
-                </div>
+                <h2 className="tickets-subtitle">Conheça nossos pacotes</h2>
             </section>
             <div className="triangle-container">
                 <div className="triangular-bottom"></div>
@@ -49,7 +47,7 @@ adipiscing elit, sed do eiusmod tempor in-
 cididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis
 nostrud exercitation ullamco laboris nisi
-ut...</p>
+ut..."</p>
             </section>
             <div className="triangle-container">
                 <div className="triangular-right"></div>

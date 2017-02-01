@@ -91,7 +91,7 @@ const Schedule = (props) => {
             <div className="flexbox bands">
                 <div className="flexbox bands-header">
                     <div className="flex-image-wrapper bands-header">
-                        <img src={defineUrl('images/eldorado/tatuadores.png')}
+                        <img src={defineUrl('images/eldorado/bandas.png')}
                             alt="Programção" 
                             className="image-bands-header" />
                     </div>
@@ -106,8 +106,11 @@ const Schedule = (props) => {
                 <Band bandImgSrc='images/outros/johnny-hooker.jpg'
                       bandName='Johnny Hooker' />
 
-                <Band bandImgSrc='images/outros/los-fabulosos-cadillacs.jpg'
-                      bandName='Los Fabulosos Cadillacs' />
+                <Band bandImgSrc='images/outros/fat-divers.jpg'
+                      bandName='Fat Divers' />
+
+                <Band bandImgSrc='images/outros/primos-distantes.jpg'
+                      bandName='Primos Distantes' />
             </div>
         </div>
     )
