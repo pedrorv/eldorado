@@ -19,23 +19,23 @@ header.page-header {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 20vmin 50vmin 0 50vmin;
+      border-width: 20vw 50vw 0 50vw;
       border-color: $eldorado-blue transparent transparent transparent;
     }
   }
 
   img.top-yellow {
-    width: 22vmin;
+    width: 22vw;
     position: absolute;
     top: -20px;
     left: 0;
   }
 
   img.top-logo {
-    width: 40vmin;
+    width: 40vw;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -20vmin;
+    margin-left: -20vw;
   }
 }
