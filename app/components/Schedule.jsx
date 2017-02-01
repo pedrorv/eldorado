@@ -42,7 +42,7 @@ const Schedule = (props) => {
                 <div className="flexbox beer-image">
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/maracujipa.png')} 
-                             alt="2Cabeças Logo"
+                             alt="2Cabeças garrafa"
                              className="beer-bottle" />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const Schedule = (props) => {
                 <div className="flexbox beer-info">
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/bohemia_logo.png')} 
-                             alt="2Cabeças Logo"
+                             alt="Bohemia Logo"
                              className="beer-logo" />
                     </div>
                     <h2 className="brewery-name">Cervejaria<br/>Bohemia</h2>
@@ -68,7 +68,7 @@ const Schedule = (props) => {
                 <div className="flexbox beer-image">
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/bohemia_ipa.png')} 
-                             alt="2Cabeças Logo"
+                             alt="Bohemia garrafa"
                              className="beer-bottle" />
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const Schedule = (props) => {
                 <div className="flexbox beer-info">
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/hocus_pocus_logo.png')} 
-                             alt="2Cabeças Logo"
+                             alt="Hocus Pocus Logo"
                              className="beer-logo" />
                     </div>
                     <h2 className="brewery-name">Cervejaria<br/>Hocus Pocus</h2>
@@ -94,12 +94,49 @@ const Schedule = (props) => {
                 <div className="flexbox beer-image">
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/hocus-pocus.png')} 
-                             alt="2Cabeças Logo"
+                             alt="Hocus Pocus garrafa"
                              className="beer-bottle" />
                     </div>
                 </div>
                 <div className="flexbox">
                     <a href="#" className="beer-link">saiba mais no site da Hocus Pocus</a>
+                </div>
+            </div>
+            <div className="flexbox beer-others">
+                <h2>E MAIS</h2>
+
+                <div className="flexbox brewery-flag">
+                    <div className="flex-image-wrapper">
+                        <img src={defineUrl('images/outros/cacildis.jpg')} 
+                             alt="Cacildis Logo"
+                             className="beer-bottle" />
+                        <h3>Cervejaria<br/>Cacildis</h3>
+                    </div>
+                    <div className="triangle-container adjust-top">
+                        <div className="triangular-right"></div>
+                    </div>
+                </div>
+                <div className="flexbox brewery-flag">
+                    <div className="flex-image-wrapper">
+                        <img src={defineUrl('images/outros/colorado_logo.png')} 
+                             alt="Colorado Logo"
+                             className="beer-bottle" />
+                        <h3>Cervejaria<br/>Colorado</h3>
+                    </div>
+                    <div className="triangle-container adjust-top">
+                        <div className="triangular-right"></div>
+                    </div>
+                </div>
+                <div className="flexbox brewery-flag">
+                    <div className="flex-image-wrapper">
+                        <img src={defineUrl('images/outros/brewdog_logo.png')} 
+                             alt="Brew Dog Logo"
+                             className="beer-bottle" />
+                        <h3>Cervejaria<br/>Brew Dog</h3>
+                    </div>
+                    <div className="triangle-container adjust-top">
+                        <div className="triangular-right"></div>
+                    </div>
                 </div>
             </div>
         </div>
