@@ -95,6 +95,8 @@ div.page-schedule {
     }
 
     &.beer-others {
+      margin-bottom: 30px;
+
       h2 {
         color: $eldorado-blue;
         margin-left: 20px;
@@ -163,6 +165,7 @@ div.page-schedule {
 
   div.flexbox.tattoo-artists {
     overflow-x: hidden;
+    margin-bottom: 30px;
 
     div.flexbox.tattoo-artist-section {
       margin: 0;
@@ -210,11 +213,12 @@ div.page-schedule {
       div.flex-image-wrapper.tattoo-header {
         background: $eldorado-blue;
         margin-top: 0;
-        padding: 10px;
+        padding: 20px 0 10px 0;
 
         img {
           display: block;
           margin: 0 auto;
+          width: 65vw;
         }
       }
 
@@ -228,6 +232,81 @@ div.page-schedule {
           border-style: solid;
           border-width: 0 100vw 30px 0;
           border-color: transparent $eldorado-blue transparent transparent;
+        }
+      }
+    }
+  }
+
+  div.flexbox.bands {
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    div.flexbox.band-section {
+      margin: 0;
+    }
+
+    div.flex-image-wrapper.band {
+      position: relative;
+      margin-top: 0;
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(transparent 0%,
+                                  rgba(255, 255, 255, 0.3) 50%,
+                                  rgba(255, 255, 255, 0.8) 100%);
+      }
+
+      img {
+        width: 100vw;
+        position: relative;
+        display: block;
+      }
+
+      h3 {
+        position: absolute;
+        bottom: 0;
+        font-size: 25px;
+        left: 20px;
+        color: black;
+        z-index: 20;
+        text-transform: uppercase;
+      }
+    }
+
+    div.flexbox.bands-header {
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: -30px;
+      z-index: 50;
+
+      div.flex-image-wrapper.bands-header {
+        background: $eldorado-yellow;
+        margin-top: 0;
+        padding: 20px 0 10px 0;
+
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 65vw;
+        }
+      }
+
+      div.triangle-container {
+        display: flex;
+        width: 100%;
+
+        div.triangular-top-right {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 100vw 30px 0;
+          border-color: transparent $eldorado-yellow transparent transparent;
         }
       }
     }

@@ -4,6 +4,7 @@ const { defineUrl } = require('../utils/utilities')
 const BreweryFlag = require('BreweryFlag')
 const BrewerySection = require('BrewerySection')
 const TattooArtist = require('TattooArtist')
+const Band = require('Band')
 
 const Schedule = (props) => {
     return (
@@ -85,6 +86,28 @@ const Schedule = (props) => {
                 
                 <TattooArtist artistImgSrc='images/outros/nikko-hurtado.jpg'
                               artistName='Nikko Hurtado' />
+            </div>
+
+            <div className="flexbox bands">
+                <div className="flexbox bands-header">
+                    <div className="flex-image-wrapper bands-header">
+                        <img src={defineUrl('images/eldorado/tatuadores.png')}
+                            alt="Programção" 
+                            className="image-bands-header" />
+                    </div>
+                    <div className="triangle-container">
+                        <div className="triangular-top-right"></div>
+                    </div>
+                </div>
+
+                <Band bandImgSrc='images/outros/los-fabulosos-cadillacs.jpg'
+                      bandName='Los Fabulosos Cadillacs' />
+
+                <Band bandImgSrc='images/outros/johnny-hooker.jpg'
+                      bandName='Johnny Hooker' />
+
+                <Band bandImgSrc='images/outros/los-fabulosos-cadillacs.jpg'
+                      bandName='Los Fabulosos Cadillacs' />
             </div>
         </div>
     )
