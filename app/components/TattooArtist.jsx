@@ -9,7 +9,7 @@ const TattooArtist = (props) => {
         <div className="flex-image-wrapper tattoo-artist">
             <img src={defineUrl(artistImgSrc)} 
                 alt={artistName}
-                className="tattoo-artist" />
+                className="tattoo-artist opacity-animation" />
             <h3>{artistName}</h3>
         </div>
     </div>

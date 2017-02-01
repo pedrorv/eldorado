@@ -9,7 +9,7 @@ const Band = (props) => {
         <div className="flex-image-wrapper band">
             <img src={defineUrl(bandImgSrc)} 
                 alt={bandName}
-                className="band" />
+                className="band opacity-animation" />
             <h3>{bandName}</h3>
         </div>
     </div>

@@ -9,7 +9,7 @@ const BreweryFlag = (props) => {
         <div className="flex-image-wrapper">
             <img src={defineUrl(breweryImageSrc)} 
                   alt={breweryName + " Logo"}
-                  className="beer-bottle" />
+                  className="beer-logo opacity-animation" />
             <h3>Cervejaria<br/>{breweryName}</h3>
         </div>
         <div className="triangle-container adjust-top">

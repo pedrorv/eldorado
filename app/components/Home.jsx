@@ -21,7 +21,7 @@ const Home = (props) => {
                 <div className="flex-image-wrapper">
                     <img src={defineUrl('images/eldorado/garanta-seu-ingresso-branco.png')} 
                          alt="Garanta seu ingresso"
-                         className="buy-tickets" />
+                         className="buy-tickets opacity-animation" />
                 </div>
                 <h2 className="tickets-subtitle">Conheça nossos pacotes</h2>
             </section>
@@ -32,7 +32,7 @@ const Home = (props) => {
                 <div className="flex-image-wrapper">
                     <img src={defineUrl('images/eldorado/conheca-el-dorado.png')} 
                          alt="Conheça El Dorado"
-                         className="about-image" />
+                         className="about-image opacity-animation" />
                     <p>O evento cervejeiro<br/>
                        que une diversão<br/>
                        com conhecimento</p>
@@ -40,7 +40,7 @@ const Home = (props) => {
                 <div className="flex-image-wrapper">
                     <img src={defineUrl('images/eldorado/caveira-ed.png')} 
                          alt="Caveira Ed"
-                         className="mascot-image" />
+                         className="mascot-image opacity-animation" />
                 </div>
                 <p className="event-text">"Lorem ipsum dolor sit amet, consectetur
 adipiscing elit, sed do eiusmod tempor in-
@@ -56,13 +56,13 @@ ut..."</p>
                 <div className="flex-image-wrapper">
                     <img src={defineUrl('images/eldorado/teasers.png')} 
                          alt="Teasers"
-                         className="teasers" />
+                         className="teasers opacity-animation" />
                 </div>
                 <div className="flexbox">
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/chopp-e-cerveja-6.jpg')} 
                                 alt="Teasers"
-                                className="teaser-image" />
+                                className="teaser-image opacity-animation" />
                         <div className="image-description">
                             <p>
                                 O Brasil e a Cerveja: Mercado atual - El Dorado Evento Cervejeiro
@@ -74,7 +74,7 @@ ut..."</p>
                     <div className="flex-image-wrapper">
                         <img src={defineUrl('images/outros/cerveja_hocus_pocus.jpg')} 
                             alt="Teasers"
-                            className="teaser-image" />
+                            className="teaser-image opacity-animation" />
                         <div className="image-description">
                             <p>
                                 Cerveja é experiência - El Dorado Evento Cervejeiro

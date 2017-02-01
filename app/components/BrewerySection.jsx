@@ -11,7 +11,7 @@ const BrewerySection = (props) => {
             <div className="flex-image-wrapper">
                 <img src={defineUrl(breweryImgSrc)} 
                       alt={breweryName + " Logo"}
-                      className="beer-logo" />
+                      className="beer-logo opacity-animation" />
             </div>
             <h2 className="brewery-name">Cervejaria<br/>{breweryName}</h2>
             <p className="brewery-description">
@@ -22,7 +22,7 @@ const BrewerySection = (props) => {
             <div className="flex-image-wrapper">
                 <img src={defineUrl(beerImgSrc)} 
                       alt={breweryName + " garrafa"}
-                      className="beer-bottle" />
+                      className="beer-bottle opacity-animation" />
             </div>
         </div>
         <div className="flexbox">

@@ -18,8 +18,28 @@ function closeMenu() {
   document.getElementById("menu").classList.remove('show')
 }
 
+function animateImages() {
+  let images = document.getElementsByTagName('img')
+
+  for(let i = 0; i < images.length; i++) {
+    let scrollPercentage = images[i].y - (window.scrollY + window.innerHeight)
+
+    if (scrollPercentage < -100) {
+      images[i].classList.remove('opacity-animation')
+    }
+  }
+}
+
+function opacityScrollAnimation() {
+  window.addEventListener('scroll', (event) => {
+    animateImages()
+  })
+}
+
 module.exports = {
   defineUrl,
   openMenu,
-  closeMenu
+  closeMenu,
+  opacityScrollAnimation,
+  animateImages
 }
