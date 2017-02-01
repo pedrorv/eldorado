@@ -1,7 +1,9 @@
 const React = require('react')
 const { defineUrl } = require('../utils/utilities')
+
 const BreweryFlag = require('BreweryFlag')
 const BrewerySection = require('BrewerySection')
+const TattooArtist = require('TattooArtist')
 
 const Schedule = (props) => {
     return (
@@ -57,6 +59,32 @@ const Schedule = (props) => {
 
                 <BreweryFlag breweryImageSrc="images/outros/brewdog_logo.png"
                              breweryName="Brew Dog" />
+            </div>
+
+            <div className="flexbox tattoo-artists">
+                <div className="flexbox tattoo-artists-header">
+                    <div className="flex-image-wrapper tattoo-header">
+                        <img src={defineUrl('images/eldorado/tatuadores.png')}
+                            alt="Programção" 
+                            className="image-tattoo-header" />
+                    </div>
+                    <div className="triangle-container">
+                        <div className="triangular-top-right"></div>
+                    </div>
+                </div>
+
+    
+                <TattooArtist artistImgSrc='images/outros/cynthia-cuevas.jpg'
+                              artistName='Cynthia Cuevas' />
+                
+                <TattooArtist artistImgSrc='images/outros/henry-anglas.jpg'
+                              artistName='Henry Anglas' />
+                
+                <TattooArtist artistImgSrc='images/outros/camila-rocha.jpg'
+                              artistName='Camila Rocha' />
+                
+                <TattooArtist artistImgSrc='images/outros/nikko-hurtado.jpg'
+                              artistName='Nikko Hurtado' />
             </div>
         </div>
     )

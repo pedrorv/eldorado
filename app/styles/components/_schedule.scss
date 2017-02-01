@@ -29,6 +29,7 @@ div.triangle-container {
 div.page-schedule {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 
   div.flexbox:last-child {
     margin-bottom: 30px;
@@ -42,7 +43,7 @@ div.page-schedule {
 
     &.schedule {
       background-color: $eldorado-blue;
-      padding-top: 17vw;
+      padding-top: 25vw;
     }
 
     &.breweries {
@@ -157,6 +158,79 @@ div.page-schedule {
     display: block;
     margin: 0 auto;
     padding-bottom: 20px;
+  }
+
+
+  div.flexbox.tattoo-artists {
+    overflow-x: hidden;
+
+    div.flexbox.tattoo-artist-section {
+      margin: 0;
+    }
+
+    div.flex-image-wrapper.tattoo-artist {
+      position: relative;
+      margin-top: 0;
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(transparent 0%,
+                                  rgba(9, 168, 163, 0.3) 50%,
+                                  rgba(9, 168, 163, 0.8) 100%);
+      }
+
+      img {
+        width: 100vw;
+        position: relative;
+        display: block;
+      }
+
+      h3 {
+        position: absolute;
+        bottom: 0;
+        font-size: 25px;
+        left: 20px;
+        color: white;
+        z-index: 20;
+        text-transform: uppercase;
+      }
+    }
+
+    div.flexbox.tattoo-artists-header {
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: -30px;
+      z-index: 50;
+
+      div.flex-image-wrapper.tattoo-header {
+        background: $eldorado-blue;
+        margin-top: 0;
+        padding: 10px;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      div.triangle-container {
+        display: flex;
+        width: 100%;
+
+        div.triangular-top-right {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 100vw 30px 0;
+          border-color: transparent $eldorado-blue transparent transparent;
+        }
+      }
+    }
   }
 }
 
