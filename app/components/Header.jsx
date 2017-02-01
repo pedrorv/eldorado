@@ -1,5 +1,5 @@
 const React = require('react')
-const { defineUrl } = require('../utils/utilities')
+const { defineUrl, openMenu, closeMenu } = require('../utils/utilities')
 
 const Header = (props) => {
     return (
@@ -9,6 +9,16 @@ const Header = (props) => {
             <div className="triangle-container">
                 <div className="triangular-bottom"></div>
             </div>
+            <img src={defineUrl('images/eldorado/menu-icon.png')} 
+                 alt="Menu"
+                 id="open-menu"
+                 onClick={openMenu}
+                 className="menu-icon" />
+            <img src={defineUrl('images/eldorado/close-menu.png')} 
+                 alt="Menu"
+                 id="close-menu"
+                 onClick={closeMenu}
+                 className="menu-icon hidden" />            
         </header>
     )
 }

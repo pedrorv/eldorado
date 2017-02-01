@@ -1,0 +1,40 @@
+div.main-holder {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+
+  div.menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    z-index: 500;
+    background-color: white;
+    padding: 10px 0;
+    transition: right 0.3s ease;
+    overflow-y: visible;
+
+    &.show {
+      right: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $eldorado-blue;
+      text-transform: uppercase;
+      display: block;
+      padding: 10px 30px;
+      font-size: 18px;
+      text-align: center;
+      font-family: hkgrotesk-bold;
+    }
+
+    hr {
+      width: 90%;
+      border: 0;
+      height: 2px;
+      background-color: $eldorado-yellow;
+      margin: 0 auto;
+    }
+  }
+}
