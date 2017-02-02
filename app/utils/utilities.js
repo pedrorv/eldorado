@@ -18,21 +18,21 @@ function closeMenu() {
   document.getElementById("menu").classList.remove('show')
 }
 
-function animateImages() {
-  let images = document.getElementsByTagName('img')
+function animateOpacity() {
+  let hiddenElements  = document.getElementsByClassName('opacity-animation')
 
-  for(let i = 0; i < images.length; i++) {
-    let scrollPercentage = images[i].y - (window.scrollY + window.innerHeight)
+  for(let i = 0; i < hiddenElements.length; i++) {
+    let scrollPercentage = hiddenElements[i].y - (window.scrollY + window.innerHeight)
 
     if (scrollPercentage < -100) {
-      images[i].classList.remove('opacity-animation')
+      hiddenElements[i].classList.remove('opacity-animation')
     }
   }
 }
 
 function opacityScrollAnimation() {
   window.addEventListener('scroll', (event) => {
-    animateImages()
+    animateOpacity()
   })
 }
 
@@ -41,5 +41,5 @@ module.exports = {
   openMenu,
   closeMenu,
   opacityScrollAnimation,
-  animateImages
+  animateOpacity
 }

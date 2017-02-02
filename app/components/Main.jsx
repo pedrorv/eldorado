@@ -1,17 +1,17 @@
 const React = require('react')
 const { Link } = require('react-router')
-const { closeMenu, opacityScrollAnimation, animateImages } = require('../utils/utilities')
+const { closeMenu, opacityScrollAnimation, animateOpacity } = require('../utils/utilities')
 
 const Header = require('Header')
 const Footer = require('Footer')
 
 const Main = React.createClass({
     componentDidMount: function() {
-        animateImages()
+        animateOpacity()
         opacityScrollAnimation()
     },
     componentDidUpdate: function() {
-        animateImages()
+        animateOpacity()
     },
     render: function() {
         return (

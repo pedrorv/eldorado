@@ -9,9 +9,11 @@ const Home = (props) => {
                 <img src={defineUrl('images/outros/2cabecas_mureta.jpg')} 
                      alt="Cervejas da cervejaria 2 Cabeças na mureta"
                      className="banner-image" />
-                <img src={defineUrl('images/eldorado/programacao-composicao-tipo.png')} 
-                     alt="Programação" 
-                     className="schedule-highlight" />
+                <Link to="/eldorado/programacao">
+                    <img src={defineUrl('images/eldorado/programacao-composicao-tipo.png')} 
+                         alt="Programação" 
+                         className="schedule-highlight" />
+                </Link>
                 <div className="banner-description">
                     <h2 className="banner-title">Cervejaria<br/>2Cabeças</h2>
                     <p className="banner-subtitle">Sabores exclusivos<br/>da fabricante carioca.</p>
