@@ -19,13 +19,13 @@ function closeMenu() {
 }
 
 function animateOpacity() {
-  let hiddenElements  = document.getElementsByClassName('opacity-animation')
+  let images  = document.getElementsByTagName('img')
 
-  for(let i = 0; i < hiddenElements.length; i++) {
-    let scrollPercentage = hiddenElements[i].y - (window.scrollY + window.innerHeight)
+  for(let i = 0; i < images.length; i++) {
+    let scrollPercentage = (images[i].y) - (window.scrollY + window.innerHeight)
 
     if (scrollPercentage < -100) {
-      hiddenElements[i].classList.remove('opacity-animation')
+      images[i].classList.remove('opacity-animation')
     }
   }
 }
